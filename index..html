@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>currency convertor </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">  
+</head>
+<body>
+    <div class="header">
+        <header>WELCOME TO CHECK CURRENCY</header>
+    </div>
+    <div class="container">
+        <div class="left-box">
+            <h2>currency convertor</h2>
+            <div class="animation-box"></div> 
+            </div>
+            <form>
+                <input type="number" id="amount" value="1">
+                <div class="selector">
+                    <p id="text">From</p>
+                    <div class="select-contain">
+                    <img id="from-flag" class="flag-img" src="https://flagsapi.com/US/flat/24.png">
+                    <select id="from">
+                        <option value="USD">USD</option>
+                        <option value="INR">INR</option>
+                        <option value="EUR">EUR</option>
+                        <option value="GBP">GBP</option>
+                    </select>
+                    </div>
+                    <div class="arrow-block"></div>
+                    <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <p id="text">To</p>
+                    <div class="select-contain">
+                        <img id="to-flag" class="flag-img" src="https://flagsapi.com/IN/flat/24.png">
+
+                    <select id="to">
+                        <option value="INR">INR</option>
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="GBP">GBP</option>
+                    </select>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="msg-container">
+        <p id="currency">1USD = 80INR</p>
+        <audio id="myAudio" src="https://assets.mixkit.co/sfx/preview/mixkit-game-treasure-coin-win-1923.mp3"></audio>
+        <button id="btn">Get Exchange Rate</button>
+    </div>
+    
+    <div class="footer">
+        <footer>
+        <p>© 2025 Currency Converter. All rights reserved.</p>
+        </footer>
+    </div>
+    <audio id="touch-sound" src="https://www.myinstants.com/media/sounds/pop-cat-original-meme.mp3" preload="auto"></audio>
+    <script src="code.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
